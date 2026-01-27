@@ -1,0 +1,26 @@
+
+
+ul { /*makes it into one line*/
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+ul li {
+  float: left; /*makes the links horizontal*/
+}
+
+ul li a {  /* makes the links into blocks*/
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-style: sans-serif;
+}
+
+ul li a:hover { /*dictates the colour when you hover over it*/
+  background-color: #111111;
+}
