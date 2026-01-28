@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | NYU Shanghai Cybersecurity Club</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Source+Code+Pro&display=swap" rel="stylesheet">
+  <style>
+    :root {
+  --purple-main: #B84DFF;   /* 主霓虹紫 */
+  --purple-glow: #C77DFF;   /* 发光 / hover */
+  --purple-dark: #6A1FBF;   /* 深紫（边框 / 背景） */
+  --bg-dark: #07070c;       /* 主背景（黑紫） */
+  --text-light: #E6DBFF;    /* 正文 */
+    }
+
+    body {
+        margin: 0;
+        background-color: var(--bg-dark);
+        color: var(--text-light);
+        font-family: 'Source Code Pro', monospace;
+        line-height: 1.6;
+    }
+    
+    h1, h2 {
+        font-family: 'Orbitron', sans-serif;
+        color: var(--text-light);
+        text-shadow:
+            0 0 8px var(--purple-main),
+            0 0 16px var(--purple-glow);
+    }
+    h3 {
+        font-family: 'Share Tech Mono', monospace;
+        color: var(--text-light);
+    }
+    
+    a {
+        color: var(--purple-main);
+        text-decoration: none;
+    }
+    a:hover {
+        color: var(--purple-glow);
+        text-shadow: 0 0 6px var(--purple-glow);
+    }
+    .hero {
+        text-align: center;
+        padding: 80px 20px;
+        /* Background image instead of black gradient */
+        /*background: url('https://cdn.builtin.com/cdn-cgi/image/f=auto,fit=cover,w=1200,h=635,q=80/sites/www.builtin.com/files/2024-10/cybersecurity.png') no-repeat center center;
+        */
+        background: url('https://www.mckinsey.com/~/media/mckinsey/business%20functions/risk/our%20insights/the%20cybersecurity%20providers%20next%20opportunity%20making%20ai%20safer/cybersecurity-geni-2180153686-thumb-1536x1536.jpg?mw=677&car=42:25') no-repeat center center;
+        background-size: cover; /* Make it cover the whole hero section */
+        color: #ffffff; /* Optional: change text color so it’s readable on the image */
+    }
+    .hero h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 1.2em;
+      font-family: 'Source Code Pro', monospace;
+      color: #e8e0e0;
+    }
+    section {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li::before {
+      content: "🔐";
+      margin-right: 10px;
+    }
+    
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #111111;
+      color:var(  --text-light);
+      text-shadow:
+            0 0 8px var(--purple-main),
+            0 0 16px var(--purple-glow);
+    }
+    .focus-card {
+        background: rgba(20, 0, 40, 0.85);
+        border: 1px solid var(--purple-dark);
+        border-radius: 14px;
+        padding: 32px;
+        box-shadow: 0 0 20px rgba(184, 77, 255, 0.2);
+        transition: all 0.3s ease;
+    }
+
+    .focus-card h3 {
+        color: var(--text-light);
+    }
+
+    .focus-card p {
+        color: var(--text-light);
+    }
+
+    .focus-card:hover {
+        transform: translateY(-6px);
+        box-shadow:
+        0 0 15px var(--purple-main),
+        0 0 35px var(--purple-glow);
+    }
+    .focus-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 固定 2×2 */
+        gap: 30px;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Welcome to NYU Shanghai Cybersecurity Club</h1>
+    <p>Learn. Defend. Break. Secure.</p>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>The NYUSH Cybersecurity Club is a student-led community passionate about digital security, privacy, and ethical hacking. We bring together curious minds to explore the fascinating world of cybersecurity through hands-on learning and collaboration.
+Whether you're a complete beginner or have experience in security, our club provides a supportive environment to develop practical skills, participate in competitions, and connect with peers who share your interests.</p>
+
+    <h2>What We Do</h2>
+    <ul>
+      <li>Hands-on workshops & tutorials</li>
+      <li>Participate in Capture the Flag (CTF) competitions</li>
+      <li>Guest speakers share insights on the latest trends in cybersecurity</li>
+      <li>Build a community for networking and growth</li>
+    </ul>
+  </section>
+
+  <!-- What we do Section -->
+  <section id="focus">
+  <h2>Our Focus Areas</h2>
+
+  <div class="focus-grid">
+    <div class="focus-card">
+      <h3>Capture The Flag</h3>
+      <p>Compete in CTF competitions to solve security challenges and develop problem-solving skills.</p>
+    </div>
+
+    <div class="focus-card">
+      <h3>Security Workshops</h3>
+      <p>Learn through hands-on workshops covering penetration testing, cryptography, and more.</p>
+    </div>
+
+    <div class="focus-card">
+      <h3>Networks & Systems</h3>
+      <p>Explore network security, system administration, and infrastructure protection.</p>
+    </div>
+
+    <div class="focus-card">
+      <h3>Ethical Hacking</h3>
+      <p>Master defensive and offensive security techniques in a responsible, ethical framework.</p>
+    </div>
+  </div>
+</section>
+
+
+
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 NYU Shanghai Cybersecurity Club | <a href="https://github.com/NYUSH-CSC" target="_blank">GitHub</a></p>
+  </footer>
+
+</body>
+</html>
