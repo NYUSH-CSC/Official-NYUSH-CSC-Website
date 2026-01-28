@@ -67,11 +67,11 @@
       margin: 60px auto;
       padding: 0 20px;
     }
-    ul {
+    al {
       list-style: none;
       padding: 0;
     }
-    ul li::before {
+    al li::before {
       content: "🔐";
       margin-right: 10px;
     }
@@ -115,9 +115,43 @@
         max-width: 900px;
         margin: 0 auto;
     }
+    ul { /*makes it into one line*/
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333333;
+    }
+
+    ul li {
+        float: left; /*makes the links horizontal*/
+    }
+
+    ul li a {  /* makes the links into blocks*/
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-style: sans-serif;
+    }
+
+    ul li a:hover { /*dictates the colour when you hover over it*/
+        background-color: #111111;
+    }
   </style>
 </head>
 <body>
+
+    <ul>
+    <link rel="stylesheet" href="nav_style.css">
+  <li><a href="default.asp">Home</a></li>
+  <li><a href="news.asp">Social media</a></li>
+  <li><a href="contact.asp">Events</a></li>
+  <li><a href="about.asp">FAQ</a></li>
+  <li><a href="about.asp">Members</a></li>
+    </ul>
+
 
   <!-- Hero Section -->
   <section class="hero">
@@ -132,12 +166,12 @@
 Whether you're a complete beginner or have experience in security, our club provides a supportive environment to develop practical skills, participate in competitions, and connect with peers who share your interests.</p>
 
     <h2>What We Do</h2>
-    <ul>
+    <al>
       <li>Hands-on workshops & tutorials</li>
       <li>Participate in Capture the Flag (CTF) competitions</li>
       <li>Guest speakers share insights on the latest trends in cybersecurity</li>
       <li>Build a community for networking and growth</li>
-    </ul>
+    </al>
   </section>
 
   <!-- What we do Section -->
