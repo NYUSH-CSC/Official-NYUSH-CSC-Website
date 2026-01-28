@@ -1,0 +1,151 @@
+/* --- ORIGINAL NAVBAR STYLES (UNCHANGED) --- */
+ul.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #0b0e14;
+    border-bottom: 1px solid rgba(168, 85, 247, 0.3);
+    width: 100%;
+}
+
+ul.navbar li {
+    float: left;
+}
+
+ul.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+ul.navbar li a:hover {
+    background-color: #a855f7;
+}
+
+/* --- PAGE STYLES --- */
+:root {
+    --nyu-purple: #a855f7;
+    --dark-bg: #0b0e14;
+    --card-bg: rgba(255, 255, 255, 0.03);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--dark-bg);
+    font-family: 'Inter', sans-serif;
+    color: white;
+}
+
+.grid-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image:
+        linear-gradient(rgba(168, 85, 247, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(168, 85, 247, 0.05) 1px, transparent 1px);
+    background-size: 50px 50px;
+    z-index: -1;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 20px;
+}
+
+.hero {
+    text-align: center;
+    max-width: 700px;
+    margin-bottom: 50px;
+}
+
+.shield-icon {
+    font-size: 4rem;
+    color: var(--nyu-purple);
+    margin-bottom: 15px;
+}
+
+.school-tag {
+    color: var(--nyu-purple);
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 3.5rem;
+    margin: 0;
+}
+
+.description {
+    color: #94a3b8;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+.social-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.social-card {
+    background: var(--card-bg);
+    border: 1px solid rgba(168, 85, 247, 0.2);
+    padding: 40px;
+    border-radius: 12px;
+    width: 280px;
+    text-align: center;
+    transition: 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.social-card:hover {
+    border-color: var(--nyu-purple);
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(168, 85, 247, 0.1);
+}
+
+.social-card i {
+    font-size: 3rem;
+    color: var(--nyu-purple);
+    margin-bottom: 20px;
+}
+
+/* --- BUTTON FIXES --- */
+.btn {
+    display: inline-block;
+    width: 140px;
+    /* Fixed width ensures they are identical */
+    padding: 12px 0;
+    /* Vertical padding only */
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    /* Ensures border doesn't grow the button */
+}
+
+.btn-purple {
+    background: var(--nyu-purple);
+    color: white;
+    border: 1px solid var(--nyu-purple);
+    /* Added border to match sizing */
+}
+
+.btn-outline {
+    border: 1px solid var(--nyu-purple);
+    color: var(--nyu-purple);
+}
