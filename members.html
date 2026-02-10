@@ -78,19 +78,19 @@
                 <div class="flex flex-wrap gap-3" id="filterButtons">
                     <button onclick="filterMembers('all')" class="filter-btn active px-6 py-3 rounded-lg flex items-center gap-2" data-category="all">
                         <span>All Members</span>
-                        <span class="text-sm font-mono category-count">(13)</span>
+                        <span class="text-sm font-mono category-count">(0)</span>
                     </button>
                     <button onclick="filterMembers('core')" class="filter-btn px-6 py-3 rounded-lg flex items-center gap-2" data-category="core">
                         <span>Core Team</span>
-                        <span class="text-sm font-mono category-count">(4)</span>
+                        <span class="text-sm font-mono category-count">(0)</span>
                     </button>
                     <button onclick="filterMembers('members')" class="filter-btn px-6 py-3 rounded-lg flex items-center gap-2" data-category="members">
                         <span>General Members</span>
-                        <span class="text-sm font-mono category-count">(6)</span>
+                        <span class="text-sm font-mono category-count">(0)</span>
                     </button>
                     <button onclick="filterMembers('alumni')" class="filter-btn px-6 py-3 rounded-lg flex items-center gap-2" data-category="alumni">
                         <span>Alumni</span>
-                        <span class="text-sm font-mono category-count">(3)</span>
+                        <span class="text-sm font-mono category-count">(0)</span>
                     </button>
                 </div>
             </div>
@@ -103,300 +103,376 @@
             <div class="max-w-6xl mx-auto">
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6" id="membersGrid">
                     
-                    <!-- Member Card 1 -->
+                    <!-- Member Card 1 Baysaa, done-->
                     <div class="member-card group p-6 bg-slate-900/50 border border-slate-800 hover:border-purple-500/50 rounded-lg hover:-translate-y-1" data-category="core">
                         <div class="mb-4 flex justify-center">
                             <div class="w-20 h-20 rounded-full bg-purple-600 flex items-center justify-center text-white text-xl ring-2 ring-slate-800 group-hover:ring-purple-500/50">
-                                AC
+                                <img src="images/Bayasgalan.jpg" alt="Bayasgalan" class="w-full h-full object-cover rounded-full" />
                             </div>
                         </div>
                         <div class="text-center mb-4">
-                            <h3 class="text-xl mb-1 text-slate-100 font-semibold">Alex Chen</h3>
+                            <h3 class="text-xl mb-1 text-slate-100 font-semibold">Bayasgalan</h3>
                             <p class="text-sm text-purple-400 font-mono">President</p>
                         </div>
                         <p class="text-sm text-slate-400 leading-relaxed mb-4 text-center">
-                            Specializing in network security and CTF competitions. Leading the club's technical initiatives.
+                            Class of 2028. 
+                            Major: Data Science, minor in Cybersecurity
                         </p>
+
                         <div class="flex justify-center gap-3 pt-4 border-t border-slate-800">
-                            <a href="#" class="p-2 bg-slate-800/50 rounded-lg hover:bg-purple-500/20 hover:text-purple-400">
+                            <a href="https://github.com/Baysuken" 
+                            target="_blank"
+                            class="p-2 bg-slate-800/50 rounded-lg hover:bg-purple-500/20 hover:text-purple-400 transition-colors">
                                 <i data-lucide="github" class="w-4 h-4"></i>
                             </a>
-                            <a href="#" class="p-2 bg-slate-800/50 rounded-lg hover:bg-purple-500/20 hover:text-purple-400">
-                                <i data-lucide="linkedin" class="w-4 h-4"></i>
-                            </a>
-                            <a href="mailto:alex.chen@nyu.edu" class="p-2 bg-slate-800/50 rounded-lg hover:bg-purple-500/20 hover:text-purple-400">
+
+                            <a href="mailto:bn2332@nyu.edu"
+                            class="p-2 bg-slate-800/50 rounded-lg hover:bg-purple-500/20 hover:text-purple-400 transition-colors">
                                 <i data-lucide="mail" class="w-4 h-4"></i>
                             </a>
                         </div>
                     </div>
-
-                    <!-- Member Card 2 -->
+                    
+                    <!-- Member Card 2 may, done-->
                     <div class="member-card group p-6 bg-slate-900/50 border border-slate-800 hover:border-purple-500/50 rounded-lg hover:-translate-y-1" data-category="core">
                         <div class="mb-4 flex justify-center">
-                            <div class="w-20 h-20 rounded-full bg-violet-600 flex items-center justify-center text-white text-xl ring-2 ring-slate-800 group-hover:ring-purple-500/50">
-                                SK
+                            <div class="w-20 h-20 rounded-full bg-purple-600 flex items-center justify-center text-white text-xl ring-2 ring-slate-800 group-hover:ring-purple-500/50">
+                                <img src="images/may.jpg" alt="may" class="w-full h-full object-cover rounded-full" />
                             </div>
                         </div>
                         <div class="text-center mb-4">
-                            <h3 class="text-xl mb-1 text-slate-100 font-semibold">Sarah Kim</h3>
+                            <h3 class="text-xl mb-1 text-slate-100 font-semibold">May</h3>
                             <p class="text-sm text-purple-400 font-mono">Vice President</p>
                         </div>
                         <p class="text-sm text-slate-400 leading-relaxed mb-4 text-center">
-                            Focused on web application security and ethical hacking. Organizing workshops and events.
+                            Class of 2028. Major: Data science and Mathematics.
                         </p>
+
                         <div class="flex justify-center gap-3 pt-4 border-t border-slate-800">
-                            <a href="#" class="p-2 bg-slate-800/50 rounded-lg hover:bg-purple-500/20 hover:text-purple-400">
-                                <i data-lucide="github" class="w-4 h-4"></i>
-                            </a>
-                            <a href="#" class="p-2 bg-slate-800/50 rounded-lg hover:bg-purple-500/20 hover:text-purple-400">
-                                <i data-lucide="linkedin" class="w-4 h-4"></i>
-                            </a>
-                            <a href="mailto:sarah.kim@nyu.edu" class="p-2 bg-slate-800/50 rounded-lg hover:bg-purple-500/20 hover:text-purple-400">
-                                <i data-lucide="mail" class="w-4 h-4"></i>
-                            </a>
+
                         </div>
                     </div>
 
-                    <!-- Member Card 3 -->
-                    <div class="member-card group p-6 bg-slate-900/50 border border-slate-800 hover:border-purple-500/50 rounded-lg hover:-translate-y-1" data-category="core">
-                        <div class="mb-4 flex justify-center">
-                            <div class="w-20 h-20 rounded-full bg-purple-500 flex items-center justify-center text-white text-xl ring-2 ring-slate-800 group-hover:ring-purple-500/50">
-                                MZ
-                            </div>
-                        </div>
-                        <div class="text-center mb-4">
-                            <h3 class="text-xl mb-1 text-slate-100 font-semibold">Michael Zhang</h3>
-                            <p class="text-sm text-purple-400 font-mono">Technical Lead</p>
-                        </div>
-                        <p class="text-sm text-slate-400 leading-relaxed mb-4 text-center">
-                            Cryptography enthusiast and malware analyst. Coordinating CTF teams.
-                        </p>
-                        <div class="flex justify-center gap-3 pt-4 border-t border-slate-800">
-                            <a href="#" class="p-2 bg-slate-800/50 rounded-lg hover:bg-purple-500/20 hover:text-purple-400">
-                                <i data-lucide="github" class="w-4 h-4"></i>
-                            </a>
-                            <a href="#" class="p-2 bg-slate-800/50 rounded-lg hover:bg-purple-500/20 hover:text-purple-400">
-                                <i data-lucide="linkedin" class="w-4 h-4"></i>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Member Card 4 -->
-                    <div class="member-card group p-6 bg-slate-900/50 border border-slate-800 hover:border-purple-500/50 rounded-lg hover:-translate-y-1" data-category="core">
-                        <div class="mb-4 flex justify-center">
-                            <div class="w-20 h-20 rounded-full bg-violet-500 flex items-center justify-center text-white text-xl ring-2 ring-slate-800 group-hover:ring-purple-500/50">
-                                EL
-                            </div>
-                        </div>
-                        <div class="text-center mb-4">
-                            <h3 class="text-xl mb-1 text-slate-100 font-semibold">Emma Liu</h3>
-                            <p class="text-sm text-purple-400 font-mono">Events Coordinator</p>
-                        </div>
-                        <p class="text-sm text-slate-400 leading-relaxed mb-4 text-center">
-                            Managing club events, guest speakers, and community outreach programs.
-                        </p>
-                        <div class="flex justify-center gap-3 pt-4 border-t border-slate-800">
-                            <a href="#" class="p-2 bg-slate-800/50 rounded-lg hover:bg-purple-500/20 hover:text-purple-400">
-                                <i data-lucide="linkedin" class="w-4 h-4"></i>
-                            </a>
-                            <a href="mailto:emma.liu@nyu.edu" class="p-2 bg-slate-800/50 rounded-lg hover:bg-purple-500/20 hover:text-purple-400">
-                                <i data-lucide="mail" class="w-4 h-4"></i>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Member Card 5 -->
+                    <!-- Member Card 3 khongoroo, done -->
                     <div class="member-card group p-6 bg-slate-900/50 border border-slate-800 hover:border-purple-500/50 rounded-lg hover:-translate-y-1" data-category="members">
                         <div class="mb-4 flex justify-center">
                             <div class="w-20 h-20 rounded-full bg-purple-600 flex items-center justify-center text-white text-xl ring-2 ring-slate-800 group-hover:ring-purple-500/50">
-                                DP
+                                <img src="images/khongoroo.jpg" alt="khongoroo" class="w-full h-full object-cover rounded-full" />
                             </div>
                         </div>
                         <div class="text-center mb-4">
-                            <h3 class="text-xl mb-1 text-slate-100 font-semibold">David Park</h3>
-                            <p class="text-sm text-purple-400 font-mono">Developer</p>
+                            <h3 class="text-xl mb-1 text-slate-100 font-semibold">Khongorzul Odbaatar</h3>
+                            <p class="text-sm text-purple-400 font-mono">member</p>
                         </div>
                         <p class="text-sm text-slate-400 leading-relaxed mb-4 text-center">
-                            Backend security and API protection. Building secure systems.
+                            Class of 2028. Major: Data science.
                         </p>
+
                         <div class="flex justify-center gap-3 pt-4 border-t border-slate-800">
-                            <a href="#" class="p-2 bg-slate-800/50 rounded-lg hover:bg-purple-500/20 hover:text-purple-400">
-                                <i data-lucide="github" class="w-4 h-4"></i>
-                            </a>
-                            <a href="mailto:david.park@nyu.edu" class="p-2 bg-slate-800/50 rounded-lg hover:bg-purple-500/20 hover:text-purple-400">
+
+                            <a href="mailto:ko2322@nyu.edu"
+                            class="p-2 bg-slate-800/50 rounded-lg hover:bg-purple-500/20 hover:text-purple-400 transition-colors">
                                 <i data-lucide="mail" class="w-4 h-4"></i>
                             </a>
                         </div>
                     </div>
 
-                    <!-- Member Card 6 -->
-                    <div class="member-card group p-6 bg-slate-900/50 border border-slate-800 hover:border-purple-500/50 rounded-lg hover:-translate-y-1" data-category="members">
-                        <div class="mb-4 flex justify-center">
-                            <div class="w-20 h-20 rounded-full bg-violet-600 flex items-center justify-center text-white text-xl ring-2 ring-slate-800 group-hover:ring-purple-500/50">
-                                JW
-                            </div>
-                        </div>
-                        <div class="text-center mb-4">
-                            <h3 class="text-xl mb-1 text-slate-100 font-semibold">Jessica Wang</h3>
-                            <p class="text-sm text-purple-400 font-mono">Security Researcher</p>
-                        </div>
-                        <p class="text-sm text-slate-400 leading-relaxed mb-4 text-center">
-                            Researching IoT security and embedded systems vulnerabilities.
-                        </p>
-                        <div class="flex justify-center gap-3 pt-4 border-t border-slate-800">
-                            <a href="#" class="p-2 bg-slate-800/50 rounded-lg hover:bg-purple-500/20 hover:text-purple-400">
-                                <i data-lucide="github" class="w-4 h-4"></i>
-                            </a>
-                            <a href="#" class="p-2 bg-slate-800/50 rounded-lg hover:bg-purple-500/20 hover:text-purple-400">
-                                <i data-lucide="linkedin" class="w-4 h-4"></i>
-                            </a>
-                        </div>
-                    </div>
 
-                    <!-- Member Card 7 -->
-                    <div class="member-card group p-6 bg-slate-900/50 border border-slate-800 hover:border-purple-500/50 rounded-lg hover:-translate-y-1" data-category="members">
-                        <div class="mb-4 flex justify-center">
-                            <div class="w-20 h-20 rounded-full bg-purple-500 flex items-center justify-center text-white text-xl ring-2 ring-slate-800 group-hover:ring-purple-500/50">
-                                RT
-                            </div>
-                        </div>
-                        <div class="text-center mb-4">
-                            <h3 class="text-xl mb-1 text-slate-100 font-semibold">Ryan Torres</h3>
-                            <p class="text-sm text-purple-400 font-mono">Penetration Tester</p>
-                        </div>
-                        <p class="text-sm text-slate-400 leading-relaxed mb-4 text-center">
-                            Specializing in penetration testing and vulnerability assessment.
-                        </p>
-                        <div class="flex justify-center gap-3 pt-4 border-t border-slate-800">
-                            <a href="#" class="p-2 bg-slate-800/50 rounded-lg hover:bg-purple-500/20 hover:text-purple-400">
-                                <i data-lucide="github" class="w-4 h-4"></i>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Member Card 8 -->
-                    <div class="member-card group p-6 bg-slate-900/50 border border-slate-800 hover:border-purple-500/50 rounded-lg hover:-translate-y-1" data-category="members">
-                        <div class="mb-4 flex justify-center">
-                            <div class="w-20 h-20 rounded-full bg-violet-500 flex items-center justify-center text-white text-xl ring-2 ring-slate-800 group-hover:ring-purple-500/50">
-                                OZ
-                            </div>
-                        </div>
-                        <div class="text-center mb-4">
-                            <h3 class="text-xl mb-1 text-slate-100 font-semibold">Olivia Zhang</h3>
-                            <p class="text-sm text-purple-400 font-mono">Member</p>
-                        </div>
-                        <p class="text-sm text-slate-400 leading-relaxed mb-4 text-center">
-                            Learning about digital forensics and incident response.
-                        </p>
-                        <div class="flex justify-center gap-3 pt-4 border-t border-slate-800">
-                            <a href="mailto:olivia.zhang@nyu.edu" class="p-2 bg-slate-800/50 rounded-lg hover:bg-purple-500/20 hover:text-purple-400">
-                                <i data-lucide="mail" class="w-4 h-4"></i>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Member Card 9 -->
+                    <!-- Member Card 5 Oyuntuya done-->
                     <div class="member-card group p-6 bg-slate-900/50 border border-slate-800 hover:border-purple-500/50 rounded-lg hover:-translate-y-1" data-category="members">
                         <div class="mb-4 flex justify-center">
                             <div class="w-20 h-20 rounded-full bg-purple-600 flex items-center justify-center text-white text-xl ring-2 ring-slate-800 group-hover:ring-purple-500/50">
-                                KL
+                                <img src="images/oyuntuya.jpg" alt="oyuntuya" class="w-full h-full object-cover rounded-full" />
                             </div>
                         </div>
                         <div class="text-center mb-4">
-                            <h3 class="text-xl mb-1 text-slate-100 font-semibold">Kevin Li</h3>
-                            <p class="text-sm text-purple-400 font-mono">Member</p>
+                            <h3 class="text-xl mb-1 text-slate-100 font-semibold">Oyuntuya Dorjpagam</h3>
+                            <p class="text-sm text-purple-400 font-mono">member</p>
                         </div>
                         <p class="text-sm text-slate-400 leading-relaxed mb-4 text-center">
-                            Interested in cloud security and secure DevOps practices.
+                            Class of 2029. Major: Data science.
                         </p>
+
                         <div class="flex justify-center gap-3 pt-4 border-t border-slate-800">
-                            <a href="#" class="p-2 bg-slate-800/50 rounded-lg hover:bg-purple-500/20 hover:text-purple-400">
-                                <i data-lucide="github" class="w-4 h-4"></i>
+
+                            <a href="mailto:od2208@nyu.edu"
+                            class="p-2 bg-slate-800/50 rounded-lg hover:bg-purple-500/20 hover:text-purple-400 transition-colors">
+                                <i data-lucide="mail" class="w-4 h-4"></i>
                             </a>
                         </div>
                     </div>
 
-                    <!-- Member Card 10 -->
+                    <!-- Member Card 6 Nomgoo, done-->
                     <div class="member-card group p-6 bg-slate-900/50 border border-slate-800 hover:border-purple-500/50 rounded-lg hover:-translate-y-1" data-category="members">
                         <div class="mb-4 flex justify-center">
-                            <div class="w-20 h-20 rounded-full bg-violet-600 flex items-center justify-center text-white text-xl ring-2 ring-slate-800 group-hover:ring-purple-500/50">
-                                SM
+                            <div class="w-20 h-20 rounded-full bg-purple-600 flex items-center justify-center text-white text-xl ring-2 ring-slate-800 group-hover:ring-purple-500/50">
+                                <img src="images/nomgoo.jpg" alt="nomgoo" class="w-full h-full object-cover rounded-full" />
                             </div>
                         </div>
                         <div class="text-center mb-4">
-                            <h3 class="text-xl mb-1 text-slate-100 font-semibold">Sophia Martinez</h3>
-                            <p class="text-sm text-purple-400 font-mono">Member</p>
+                            <h3 class="text-xl mb-1 text-slate-100 font-semibold">Nomgondalai Amgalanbaatar</h3>
+                            <p class="text-sm text-purple-400 font-mono">member</p>
                         </div>
                         <p class="text-sm text-slate-400 leading-relaxed mb-4 text-center">
-                            Exploring reverse engineering and binary exploitation.
+                            Class of 2028. Major: Computer Science, Minor in Cybersecurity. 
                         </p>
+
                         <div class="flex justify-center gap-3 pt-4 border-t border-slate-800">
-                            <a href="#" class="p-2 bg-slate-800/50 rounded-lg hover:bg-purple-500/20 hover:text-purple-400">
-                                <i data-lucide="linkedin" class="w-4 h-4"></i>
+
+                            <a href="mailto:na3924@nyu.edu"
+                            class="p-2 bg-slate-800/50 rounded-lg hover:bg-purple-500/20 hover:text-purple-400 transition-colors">
+                                <i data-lucide="mail" class="w-4 h-4"></i>
                             </a>
                         </div>
                     </div>
 
-                    <!-- Member Card 11 -->
-                    <div class="member-card group p-6 bg-slate-900/50 border border-slate-800 hover:border-purple-500/50 rounded-lg hover:-translate-y-1" data-category="alumni">
+
+                    <!-- Member Card 7 mandaa, done-->
+                    <div class="member-card group p-6 bg-slate-900/50 border border-slate-800 hover:border-purple-500/50 rounded-lg hover:-translate-y-1" data-category="members">
                         <div class="mb-4 flex justify-center">
-                            <div class="w-20 h-20 rounded-full bg-slate-600 flex items-center justify-center text-white text-xl ring-2 ring-slate-800 group-hover:ring-purple-500/50">
-                                DW
+                            <div class="w-20 h-20 rounded-full bg-purple-600 flex items-center justify-center text-white text-xl ring-2 ring-slate-800 group-hover:ring-purple-500/50">
+                                <img src="images/mandaa.jpg" alt="mandaa" class="w-full h-full object-cover rounded-full" />
                             </div>
                         </div>
                         <div class="text-center mb-4">
-                            <h3 class="text-xl mb-1 text-slate-100 font-semibold">Daniel Wu</h3>
-                            <p class="text-sm text-purple-400 font-mono">Former President</p>
+                            <h3 class="text-xl mb-1 text-slate-100 font-semibold">Uurdmandakh Munkhbayar</h3>
+                            <p class="text-sm text-purple-400 font-mono">member</p>
                         </div>
                         <p class="text-sm text-slate-400 leading-relaxed mb-4 text-center">
-                            Now working as a Security Engineer at a Fortune 500 company. Founded the club in 2022.
+                            Class of 2028. Major: Computer Science.
                         </p>
+
                         <div class="flex justify-center gap-3 pt-4 border-t border-slate-800">
-                            <a href="#" class="p-2 bg-slate-800/50 rounded-lg hover:bg-purple-500/20 hover:text-purple-400">
-                                <i data-lucide="linkedin" class="w-4 h-4"></i>
+                            <a href="https://github.com/M-Manda" 
+                            target="_blank"
+                            class="p-2 bg-slate-800/50 rounded-lg hover:bg-purple-500/20 hover:text-purple-400 transition-colors">
+                                <i data-lucide="github" class="w-4 h-4"></i>
+                            </a>
+
+                            <a href="mailto:ug2077@nyu.edu"
+                            class="p-2 bg-slate-800/50 rounded-lg hover:bg-purple-500/20 hover:text-purple-400 transition-colors">
+                                <i data-lucide="mail" class="w-4 h-4"></i>
                             </a>
                         </div>
                     </div>
 
-                    <!-- Member Card 12 -->
-                    <div class="member-card group p-6 bg-slate-900/50 border border-slate-800 hover:border-purple-500/50 rounded-lg hover:-translate-y-1" data-category="alumni">
+                    <!-- Member Card 8 Temie, done-->
+                    <div class="member-card group p-6 bg-slate-900/50 border border-slate-800 hover:border-purple-500/50 rounded-lg hover:-translate-y-1" data-category="members">
                         <div class="mb-4 flex justify-center">
-                            <div class="w-20 h-20 rounded-full bg-slate-600 flex items-center justify-center text-white text-xl ring-2 ring-slate-800 group-hover:ring-purple-500/50">
-                                RP
+                            <div class="w-20 h-20 rounded-full bg-purple-600 flex items-center justify-center text-white text-xl ring-2 ring-slate-800 group-hover:ring-purple-500/50">
+                                <img src="images/temie.jpg" alt="temie" class="w-full h-full object-cover rounded-full" />
                             </div>
                         </div>
                         <div class="text-center mb-4">
-                            <h3 class="text-xl mb-1 text-slate-100 font-semibold">Rachel Patel</h3>
-                            <p class="text-sm text-purple-400 font-mono">Alumni</p>
+                            <h3 class="text-xl mb-1 text-slate-100 font-semibold">Temie Sukhbold</h3>
+                            <p class="text-sm text-purple-400 font-mono">member</p>
                         </div>
                         <p class="text-sm text-slate-400 leading-relaxed mb-4 text-center">
-                            Security consultant specializing in compliance and risk assessment.
+                            Class of 2028.  Major: Computer Systems engineering.
                         </p>
+
                         <div class="flex justify-center gap-3 pt-4 border-t border-slate-800">
-                            <a href="#" class="p-2 bg-slate-800/50 rounded-lg hover:bg-purple-500/20 hover:text-purple-400">
-                                <i data-lucide="linkedin" class="w-4 h-4"></i>
+                            <a href="https://github.com/t3mi3su" 
+                            target="_blank"
+                            class="p-2 bg-slate-800/50 rounded-lg hover:bg-purple-500/20 hover:text-purple-400 transition-colors">
+                                <i data-lucide="github" class="w-4 h-4"></i>
+                            </a>
+
+                            <a href="mailto:ts5385@nyu.edu"
+                            class="p-2 bg-slate-800/50 rounded-lg hover:bg-purple-500/20 hover:text-purple-400 transition-colors">
+                                <i data-lucide="mail" class="w-4 h-4"></i>
                             </a>
                         </div>
                     </div>
 
-                    <!-- Member Card 13 -->
-                    <div class="member-card group p-6 bg-slate-900/50 border border-slate-800 hover:border-purple-500/50 rounded-lg hover:-translate-y-1" data-category="alumni">
+                    <!-- Member Card 9 Abdullah, done-->
+                    <div class="member-card group p-6 bg-slate-900/50 border border-slate-800 hover:border-purple-500/50 rounded-lg hover:-translate-y-1" data-category="members">
                         <div class="mb-4 flex justify-center">
-                            <div class="w-20 h-20 rounded-full bg-slate-600 flex items-center justify-center text-white text-xl ring-2 ring-slate-800 group-hover:ring-purple-500/50">
-                                JL
+                            <div class="w-20 h-20 rounded-full bg-purple-600 flex items-center justify-center text-white text-xl ring-2 ring-slate-800 group-hover:ring-purple-500/50">
+                                <img src="images/abdullah.jpg" alt="abdullah" class="w-full h-full object-cover rounded-full" />
                             </div>
                         </div>
                         <div class="text-center mb-4">
-                            <h3 class="text-xl mb-1 text-slate-100 font-semibold">James Lee</h3>
-                            <p class="text-sm text-purple-400 font-mono">Alumni</p>
+                            <h3 class="text-xl mb-1 text-slate-100 font-semibold">Abdullah Saqib</h3>
+                            <p class="text-sm text-purple-400 font-mono">member</p>
                         </div>
                         <p class="text-sm text-slate-400 leading-relaxed mb-4 text-center">
-                            Cybersecurity analyst working in financial services security.
+                            Class of 2028. Major: Computer science.
                         </p>
+
                         <div class="flex justify-center gap-3 pt-4 border-t border-slate-800">
-                            <a href="#" class="p-2 bg-slate-800/50 rounded-lg hover:bg-purple-500/20 hover:text-purple-400">
-                                <i data-lucide="linkedin" class="w-4 h-4"></i>
+                            <a href="https://github.com/Abdsqb" 
+                            target="_blank"
+                            class="p-2 bg-slate-800/50 rounded-lg hover:bg-purple-500/20 hover:text-purple-400 transition-colors">
+                                <i data-lucide="github" class="w-4 h-4"></i>
                             </a>
+
+                            <a href="mailto:as19305@nyu.edu"
+                            class="p-2 bg-slate-800/50 rounded-lg hover:bg-purple-500/20 hover:text-purple-400 transition-colors">
+                                <i data-lucide="mail" class="w-4 h-4"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Member Card 10 uuree, done-->
+                    <div class="member-card group p-6 bg-slate-900/50 border border-slate-800 hover:border-purple-500/50 rounded-lg hover:-translate-y-1" data-category="members">
+                        <div class="mb-4 flex justify-center">
+                            <div class="w-20 h-20 rounded-full bg-purple-600 flex items-center justify-center text-white text-xl ring-2 ring-slate-800 group-hover:ring-purple-500/50">
+                                <img src="images/uuree.jpg" alt="uuree" class="w-full h-full object-cover rounded-full" />
+                            </div>
+                        </div>
+                        <div class="text-center mb-4">
+                            <h3 class="text-xl mb-1 text-slate-100 font-semibold">Uuriintuya Ganzorig</h3>
+                            <p class="text-sm text-purple-400 font-mono">member</p>
+                        </div>
+                        <p class="text-sm text-slate-400 leading-relaxed mb-4 text-center">
+                            Class of 2028. Major: Computer science.
+                        </p>
+
+                        <div class="flex justify-center gap-3 pt-4 border-t border-slate-800">
+
+                            <a href="mailto:ug2071@nyu.edu"
+                            class="p-2 bg-slate-800/50 rounded-lg hover:bg-purple-500/20 hover:text-purple-400 transition-colors">
+                                <i data-lucide="mail" class="w-4 h-4"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Member Card 11 bella -->
+                    <div class="member-card group p-6 bg-slate-900/50 border border-slate-800 hover:border-purple-500/50 rounded-lg hover:-translate-y-1" data-category="members">
+                        <div class="mb-4 flex justify-center">
+                            <div class="w-20 h-20 rounded-full bg-purple-600 flex items-center justify-center text-white text-xl ring-2 ring-slate-800 group-hover:ring-purple-500/50">
+                                <img src="images/bella.jpg" alt="bella" class="w-full h-full object-cover rounded-full" />
+                            </div>
+                        </div>
+                        <div class="text-center mb-4">
+                            <h3 class="text-xl mb-1 text-slate-100 font-semibold">Suvd Sandagdorj</h3>
+                            <p class="text-sm text-purple-400 font-mono">member</p>
+                        </div>
+                        <p class="text-sm text-slate-400 leading-relaxed mb-4 text-center">
+                            Class of 2028. Major: Computer science.
+                        </p>
+
+                        <div class="flex justify-center gap-3 pt-4 border-t border-slate-800">
+
+                            <a href="mailto:sjs10067@nyu.edu"
+                            class="p-2 bg-slate-800/50 rounded-lg hover:bg-purple-500/20 hover:text-purple-400 transition-colors">
+                                <i data-lucide="mail" class="w-4 h-4"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Member Card 12 trisha,done-->
+                    <div class="member-card group p-6 bg-slate-900/50 border border-slate-800 hover:border-purple-500/50 rounded-lg hover:-translate-y-1" data-category="core">
+                        <div class="mb-4 flex justify-center">
+                            <div class="w-20 h-20 rounded-full bg-purple-600 flex items-center justify-center text-white text-xl ring-2 ring-slate-800 group-hover:ring-purple-500/50">
+                                <img src="images/trisha.jpg" alt="trisha" class="w-full h-full object-cover rounded-full" />
+                            </div>
+                        </div>
+                        <div class="text-center mb-4">
+                            <h3 class="text-xl mb-1 text-slate-100 font-semibold">Trisha</h3>
+                            <p class="text-sm text-purple-400 font-mono">member</p>
+                        </div>
+                        <p class="text-sm text-slate-400 leading-relaxed mb-4 text-center">
+                            Class of 2028. Major: Electrical Systems Engineering.
+                        </p>
+
+                        <div class="flex justify-center gap-3 pt-4 border-t border-slate-800">
+
+                            <a href="mailto:tp2668@nyu.edu"
+                            class="p-2 bg-slate-800/50 rounded-lg hover:bg-purple-500/20 hover:text-purple-400 transition-colors">
+                                <i data-lucide="mail" class="w-4 h-4"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Member Card 13 mandy, done-->
+                    <div class="member-card group p-6 bg-slate-900/50 border border-slate-800 hover:border-purple-500/50 rounded-lg hover:-translate-y-1" data-category="members">
+                        <div class="mb-4 flex justify-center">
+                            <div class="w-20 h-20 rounded-full bg-purple-600 flex items-center justify-center text-white text-xl ring-2 ring-slate-800 group-hover:ring-purple-500/50">
+                                <img src="images/mandy.jpg" alt="mandy" class="w-full h-full object-cover rounded-full" />
+                            </div>
+                        </div>
+                        <div class="text-center mb-4">
+                            <h3 class="text-xl mb-1 text-slate-100 font-semibold">Mandy Qi</h3>
+                            <p class="text-sm text-purple-400 font-mono">member</p>
+                        </div>
+                        <p class="text-sm text-slate-400 leading-relaxed mb-4 text-center">
+                            Website design team member. Major: Computer science and Mathematics.
+                        </p>
+
+                        <div class="flex justify-center gap-3 pt-4 border-t border-slate-800">
+
+                            <a href="mailto:mq2235@nyu.edu"
+                            class="p-2 bg-slate-800/50 rounded-lg hover:bg-purple-500/20 hover:text-purple-400 transition-colors">
+                                <i data-lucide="mail" class="w-4 h-4"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--member card 14 Tengis, done, no profile-->
+                    <div class="member-card group p-6 bg-slate-900/50 border border-slate-800 hover:border-purple-500/50 rounded-lg hover:-translate-y-1" data-category="members">
+                        <div class="mb-4 flex justify-center">
+                            <div class="w-20 h-20 rounded-full bg-purple-600 flex items-center justify-center text-white text-xl ring-2 ring-slate-800 group-hover:ring-purple-500/50">
+                                <img src="images/tengis.jpg" alt="tengis" class="w-full h-full object-cover rounded-full" />
+                            </div>
+                        </div>
+                        <div class="text-center mb-4">
+                            <h3 class="text-xl mb-1 text-slate-100 font-semibold">Tengis</h3>
+                            <p class="text-sm text-purple-400 font-mono">member</p>
+                        </div>
+                        <p class="text-sm text-slate-400 leading-relaxed mb-4 text-center">
+                            Class of 2028. Major: Computer science.
+                        </p>
+
+                        <div class="flex justify-center gap-3 pt-4 border-t border-slate-800">
+
+                            <a href="mailto:tk3442@nyu.edu"
+                            class="p-2 bg-slate-800/50 rounded-lg hover:bg-purple-500/20 hover:text-purple-400 transition-colors">
+                                <i data-lucide="mail" class="w-4 h-4"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--member card 15 Bryant-->
+                    <div class="member-card group p-6 bg-slate-900/50 border border-slate-800 hover:border-purple-500/50 rounded-lg hover:-translate-y-1" data-category="members">
+                        <div class="mb-4 flex justify-center">
+                            <div class="w-20 h-20 rounded-full bg-purple-600 flex items-center justify-center text-white text-xl ring-2 ring-slate-800 group-hover:ring-purple-500/50">
+                                <img src="bryant.jpg" alt="bryant" class="w-full h-full object-cover rounded-full" />
+                            </div>
+                        </div>
+                        <div class="text-center mb-4">
+                            <h3 class="text-xl mb-1 text-slate-100 font-semibold">Bryant</h3>
+                            <p class="text-sm text-purple-400 font-mono">member</p>
+                        </div>
+                        <p class="text-sm text-slate-400 leading-relaxed mb-4 text-center">
+                            Class of 2028. Major: Mathematics.
+                        </p>
+
+                        <div class="flex justify-center gap-3 pt-4 border-t border-slate-800">
+                            
+                        </div>
+                    </div>
+
+                    <!--member card 16 Hans-->
+                    <div class="member-card group p-6 bg-slate-900/50 border border-slate-800 hover:border-purple-500/50 rounded-lg hover:-translate-y-1" data-category="core">
+                        <div class="mb-4 flex justify-center">
+                            <div class="w-20 h-20 rounded-full bg-purple-600 flex items-center justify-center text-white text-xl ring-2 ring-slate-800 group-hover:ring-purple-500/50">
+                                <img src="images/hans.jpg" alt="hans" class="w-full h-full object-cover rounded-full" />
+                            </div>
+                        </div>
+                        <div class="text-center mb-4">
+                            <h3 class="text-xl mb-1 text-slate-100 font-semibold">Hans</h3>
+                            <p class="text-sm text-purple-400 font-mono">member</p>
+                        </div>
+                        <p class="text-sm text-slate-400 leading-relaxed mb-4 text-center">
+                            Class of 2028. Major: Computer science.
+                        </p>
+
+                        <div class="flex justify-center gap-3 pt-4 border-t border-slate-800">
+                            
+
+                            
                         </div>
                     </div>
 
@@ -414,10 +490,6 @@
                     We're always looking for passionate students interested in cybersecurity. 
                     Join us and be part of an amazing community!
                 </p>
-                <button class="px-8 py-4 bg-purple-500 hover:bg-purple-400 text-white rounded-lg inline-flex items-center gap-2">
-                    <i data-lucide="users" class="w-5 h-5"></i>
-                    <span>Join the Club</span>
-                </button>
             </div>
         </div>
     </section>
@@ -436,14 +508,6 @@
                         </div>
                     </div>
 
-                    <!-- Links -->
-                    <div class="flex gap-8 text-sm">
-                        <a href="#" class="text-slate-400 hover:text-purple-400">Home</a>
-                        <a href="#" class="text-slate-400 hover:text-purple-400">Discord</a>
-                        <a href="#" class="text-slate-400 hover:text-purple-400">GitHub</a>
-                        <a href="#" class="text-slate-400 hover:text-purple-400">Contact</a>
-                    </div>
-
                     <!-- Copyright -->
                     <div class="text-sm text-slate-500">
                         © 2026 NYU Shanghai Cybersecurity Club
@@ -458,38 +522,92 @@
     </footer>
 
     <script>
-        // Initialize Lucide icons
-        lucide.createIcons();
-
-        // Filter members function
-        function filterMembers(category) {
-            const cards = document.querySelectorAll('.member-card');
-            const buttons = document.querySelectorAll('.filter-btn');
-            
-            // Update button styles
-            buttons.forEach(btn => {
-                if (btn.getAttribute('data-category') === category) {
-                    btn.classList.add('active', 'bg-purple-500', 'text-white');
-                    btn.classList.remove('bg-slate-900/50', 'text-slate-300', 'border', 'border-slate-800');
-                    btn.querySelector('.category-count').classList.remove('text-slate-500');
-                    btn.querySelector('.category-count').classList.add('text-purple-100');
-                } else {
-                    btn.classList.remove('active', 'bg-purple-500', 'text-white');
-                    btn.classList.add('bg-slate-900/50', 'text-slate-300', 'border', 'border-slate-800');
-                    btn.querySelector('.category-count').classList.remove('text-purple-100');
-                    btn.querySelector('.category-count').classList.add('text-slate-500');
-                }
-            });
-            
-            // Filter cards
-            cards.forEach(card => {
-                if (category === 'all' || card.getAttribute('data-category') === category) {
-                    card.style.display = 'block';
-                } else {
-                    card.style.display = 'none';
-                }
-            });
+    document.addEventListener('DOMContentLoaded', () => {
+        if (window.lucide) {
+            lucide.createIcons();
         }
+
+        updateCategoryCounts();
+        filterMembers('all');
+    });
+
+    function filterMembers(category) {
+        const cards = document.querySelectorAll('.member-card');
+        const buttons = document.querySelectorAll('.filter-btn');
+
+        // Update button styles
+        buttons.forEach(btn => {
+            const countSpan = btn.querySelector('.category-count');
+            const isActive = btn.dataset.category === category;
+
+            btn.classList.toggle('active', isActive);
+            btn.classList.toggle('bg-purple-500', isActive);
+            btn.classList.toggle('text-white', isActive);
+
+            btn.classList.toggle('bg-slate-900/50', !isActive);
+            btn.classList.toggle('text-slate-300', !isActive);
+            btn.classList.toggle('border', !isActive);
+            btn.classList.toggle('border-slate-800', !isActive);
+
+            if (countSpan) {
+                countSpan.classList.toggle('text-slate-500', !isActive);
+            }
+        });
+
+        // Filter cards (NO hidden, NO transitionend)
+        cards.forEach(card => {
+            const cardCategory = card.dataset.category;
+            const shouldShow = category === 'all' || cardCategory === category;
+
+            if (shouldShow) {
+                card.classList.remove(
+                    'pointer-events-none',
+                    'opacity-0',
+                    'scale-95'
+                );
+                card.classList.add(
+                    'opacity-100',
+                    'scale-100'
+                );
+            } else {
+                card.classList.add(
+                    'pointer-events-none',
+                    'opacity-0',
+                    'scale-95'
+                );
+                card.classList.remove(
+                    'opacity-100',
+                    'scale-100'
+                );
+            }
+        });
+    }
+
+    function updateCategoryCounts() {
+        const cards = document.querySelectorAll('.member-card');
+        const buttons = document.querySelectorAll('.filter-btn');
+
+        const counts = {
+            all: cards.length
+        };
+
+        cards.forEach(card => {
+            const category = card.dataset.category;
+            counts[category] = (counts[category] || 0) + 1;
+        });
+
+        buttons.forEach(btn => {
+            const category = btn.dataset.category;
+            const countSpan = btn.querySelector('.category-count');
+
+            if (countSpan) {
+                countSpan.textContent = `(${counts[category] || 0})`;
+            }
+        });
+    }
     </script>
+
+
 </body>
 </html>
+
